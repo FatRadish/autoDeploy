@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "inquirer": "^12.6.3",
+    "node-ssh": "^13.2.1"
+  }
+}
