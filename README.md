@@ -14,13 +14,13 @@
 
 ## 安装依赖
 
-```bash
-# 使用pnpm安装依赖
-pnpm install
+### 推荐使用 pnpm
 
-# 或使用npm
-npm install
+```bash
+# 使用pnpm安装依赖（推荐）
+pnpm install
 ```
+
 
 ## 配置说明
 
@@ -79,11 +79,29 @@ const config = [
 
 ### 如何运行
 
+#### 使用 pnpm 运行（推荐）
+
 ```bash
 # 运行程序，会显示项目选择菜单
 pnpm app
-# 或
-npm run app
+
+# 或者使用 pnpm 直接运行
+pnpm start
+
+# 构建项目
+pnpm build
+
+```
+
+
+#### 全局安装使用
+
+```bash
+# 全局安装
+pnpm install -g .
+
+# 全局使用
+auto-upload
 ```
 
 ## 部署流程
