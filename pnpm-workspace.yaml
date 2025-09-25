@@ -1,0 +1,2 @@
+overrides:
+  auto-upload: link:../../../Library/pnpm/global/5/node_modules/auto-upload

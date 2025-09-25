@@ -1,11 +1,36 @@
 {
+  "name": "auto-upload",
+  "version": "1.0.0",
+  "description": "自动化部署工具",
   "type": "module",
+  "main": "dist/autoUpload.cjs",
+  "module": "dist/autoUpload.js",
+  "bin": {
+    "auto-upload": "./dist/autoUpload.js"
+  },
+  "files": [
+    "dist",
+    "config.js",
+    "README.md"
+  ],
   "scripts": {
-    "app": "node app.js"
+    "app": "node app.js",
+    "build": "rollup -c",
+    "build:prod": "rollup -c --environment NODE_ENV:production",
+    "start": "node dist/autoUpload.js"
   },
   "dependencies": {
     "archiver": "^7.0.1",
+    "auto-upload": "link:../../../Library/pnpm/global/5/node_modules/auto-upload",
     "inquirer": "^12.6.3",
     "node-ssh": "^13.2.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.50.1",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
