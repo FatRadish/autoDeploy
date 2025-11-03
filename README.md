@@ -48,7 +48,6 @@ const config = [
         targetDir: 'your_target_dir',    // 本地构建目录
         targetFile: 'dist.zip',          // 压缩文件名
         deployDir: '/usr/share/nginx/html/your_project', // 远程部署目录
-        releaseDir: 'web',               // 解压后的目录名
         buildCommand: 'npm run build',   // 构建命令
     },
     {
@@ -72,7 +71,6 @@ const config = [
 | `targetDir` | 本地构建目录路径 | `'./dist'` |
 | `targetFile` | 压缩文件名 | `'dist.zip'` |
 | `deployDir` | 远程部署目录 | `'/var/www/html'` |
-| `releaseDir` | 解压后的目录名 | `'web'` |
 | `buildCommand` | 构建命令 | `'npm run build:prod'` |
 
 ## 使用方法
